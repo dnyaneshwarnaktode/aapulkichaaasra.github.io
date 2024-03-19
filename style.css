@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+.root{
+    --black:#eee:
+    --box-shadow:#fff:
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    transition: all .2s linear;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 63%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+
+}
+body{
+    background-color: #D9ED92;
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    padding: 2rem 9%;
+    background-color: #B5E48C;
+    box-shadow: 0 .1rem 1rem rgb(29, 29, 29);
+}
+header a{
+    color: rgb(51, 56, 41);
+}
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.header .logo i{
+    color: #2a2926;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: black;
+    margin: 0 1.2rem;
+}
+.header .navbar a:hover{
+    color: #184E77;
+    
+}
+.header .icons{
+    flex-direction: row;
+}
+.header .icons div{
+    border:0px solid black;
+    flex-direction: row;
+    border-radius: .5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    background: #99D98C;
+    align-items: center;
+    font-size: 2rem;
+    margin: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    background-color: #1A759F;
+    color: #eee;
+
+}
+#menu-btn{
+    display: none;
+}
+
+.header .search-form{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #d6eec1;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: rgb(43, 43, 43);
+}
+.header .search-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    background: none;
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+}
+.header .search-form label{
+    font-size: 2rem;
+    padding-right: 1.5rem;
+    cursor: pointer;
+}
+.header .search-form label:hover{
+    color: #184E77;
+}
